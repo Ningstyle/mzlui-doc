@@ -7,6 +7,7 @@ import mzlUi from 'mzl-ui'
 import '../node_modules/mzl-ui/dist/style.css'
 import hljs from 'highlight.js' //导入代码高亮文件
 import 'highlight.js/styles/color-brewer.css'
+import '@/styles/light.css'
 // import store from '@/store/index';
 const app = createApp(App)
 // app.config.globalProperties.$store = store
@@ -20,7 +21,7 @@ hljs.configure({
 app.directive('highlight', function (el) {
 	const blocks = el.querySelectorAll('pre code');
 	blocks.forEach((block) => {
-			hljs.highlightBlock(block)
+		hljs.highlightBlock(block)
 	})
 })
 

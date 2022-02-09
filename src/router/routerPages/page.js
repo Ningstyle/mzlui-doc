@@ -38,6 +38,16 @@ export default [
         },
         children:[]
       },
+      {
+        path:'layout',
+        name:'layout',
+        component:()=> import('@/page/packages/layout.vue'),
+        meta:{
+          requireAuth: true,
+          title:"layout"
+        },
+        children:[]
+      },
 			{
 			  path:'button',
 			  name:'button',

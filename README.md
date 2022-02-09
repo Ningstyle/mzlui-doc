@@ -1,7 +1,23 @@
-# Vue 3 + Vite
+---
+title: Button按钮
+description: Describe this awesome content
+tags:
+  - "great"
+  - "awesome"
+  - "rad"
+---
+## Button按钮
+网页常用button按钮，常用于响应一个事件或处理某个逻辑
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+<span><m-button>默认按钮</m-button></span>  
+<span><m-button type="primary">主要按钮</m-button></span> 
+<span><m-button type="success">成功按钮</m-button></span> 
+<span><m-button type="danger">危险按钮</m-button></span> 
+<span><m-button type="warning">警告按钮</m-button></span> 
+<span><m-button type="dashed">虚线按钮</m-button></span> 
+<span><m-button type="text">文本按钮</m-button></span>
+```javascript hljs
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+const path = require("path");
+```

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 const path = require("path");
+const mdPlugin = require('vite-plugin-markdown')
 // 自动方式导入element-plus
 // import AutoImport from 'unplugin-auto-import/vite'
 // import Components from 'unplugin-vue-components/vite'
@@ -10,6 +11,9 @@ const path = require("path");
 export default defineConfig({
   plugins: [
     vue(),
+    mdPlugin.plugin({
+      mode: ['vue'],
+    })
     // AutoImport({
     //   resolvers: [ElementPlusResolver()],
     // }),

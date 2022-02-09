@@ -12,7 +12,7 @@ export default [
 		'title-cn':'常规',
 		'title-en':'Conventional',
 		'list':[
-			{'title-cn':'layout 布局','title-en':'layout','path':''},
+			{'title-cn':'layout 布局','title-en':'layout','path':'/mzlui/layout'},
 			{'title-cn':'Color 颜色','title-en':'Colors','path':''},
 			{'title-cn':'Icon 图标','title-en':'Icons','path':''}
 		]
