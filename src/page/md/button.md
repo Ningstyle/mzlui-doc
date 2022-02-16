@@ -1,7 +1,8 @@
 ---
-title: Button按钮
+version: 0.20
+title: button
 ---
-# Button按钮 [<i class="iconfont m-icon-edit"></i>](链接地址 '在github上编辑此页面')
+# Button按钮 <a href="https://github.com/Ningstyle/mzlui-doc/blob/main/src/page/md/button.md" target="_back" title="您可在Github上编辑此页面"><i class="iconfont m-icon-bianji" style="font-size:25px;color:#0e80eb"></i></a>
 
 #### 网页常用button按钮，常用于响应一个事件或处理某个逻辑
 <br/>
@@ -59,7 +60,7 @@ title: Button按钮
 <br/>
 
 ## 禁用状态
-#### 按钮不可操作的状态——通过 <font color=#0e80eb>**disabled**</font> 属性设置实现
+#### 按钮不可操作的状态——通过<font color=#0e80eb>**disabled**</font> 属性设置实现
 <br/>
 <div class="items">
   <span><m-button disabled>默认按钮</m-button></span>  

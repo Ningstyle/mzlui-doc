@@ -5,12 +5,11 @@ import 'element-plus/dist/index.css';
 import {createPinia} from 'pinia'
 import mzlUi from 'mzl-ui'
 import '../node_modules/mzl-ui/dist/style.css'
-import hljs from 'highlight.js' //导入代码高亮文件
+import hljs from 'highlight.js'
 import 'highlight.js/styles/color-brewer.css'
-import '@/styles/light.css'
-// import store from '@/store/index';
+import './styles/app.scss'
 const app = createApp(App)
-// app.config.globalProperties.$store = store
+
 app.use(router)
 app.use(mzlUi)
 app.use(createPinia())
