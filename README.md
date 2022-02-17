@@ -1,15 +1,14 @@
 # mzl-ui 
 ##### 你，我生命中一个重要的过客，之所以是过客，因为你未曾为我停留！
 ###### version:0.3.0
----
-title: mzl-ui
+
 description: 一套适合开发者使用的轻量级UI组件库，完美支持vite+vue3
 tags:
   - "vite"
   - "vue3"
   - "ui"
 home: [mzl-ui使用文档](https://codeym.com)
----
+***
 ### 快速使用
 ```
 npm install  mzl-ui --save
