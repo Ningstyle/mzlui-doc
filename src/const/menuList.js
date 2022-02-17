@@ -22,7 +22,8 @@ export default [
 		'title-en':'Universal',
 		'list':[
 			{'title-cn':'Button 按钮','title-en':'Buttons','path':'/mzlui/button'},
-			{'title-cn':'Input 输入框','title-en':'Inputs','path':''},
+			{'title-cn':'Input 输入框','title-en':'Inputs','path':'/mzlui/input'},
+			{'title-cn':'Select 下拉框','title-en':'Select','path':'/mzlui/select'},
 			{'title-cn':'Radio 单选','title-en':'Radios','path':''}
 		]
 	},
@@ -30,7 +31,7 @@ export default [
 		'title-cn':'数据',
 		'title-en':'Data',
 		'list':[
-			{'title-cn':'Table 表格','title-en':'Table','path':''},
+			{'title-cn':'Table 表格','title-en':'Table','path':'/mzlui/table'},
 			{'title-cn':'Pagination 分页','title-en':'Pagination','path':''}
 		]
 	}

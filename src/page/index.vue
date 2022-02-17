@@ -8,7 +8,7 @@
 			<p>完美支持vite+vue3版本，更小的体积，更快的响应，更强的拓展性，让我们一起向未来，拥抱这精彩的vue世界！</p>
 			<div class="buttonGroups">
 				<m-button type="primary" round style="padding:15px 50px;margin-right:2vw;font-size:17px" @click="toComponents">立即上手</m-button>
-				<m-button round icon="m-icon-github" style="padding:15px 50px;margin-left:2vw;font-size:17px">Github</m-button>
+				<m-button round icon="m-icon-github" style="padding:15px 50px;margin-left:2vw;font-size:17px" @click="goGuthub">Github</m-button>
 			</div>
 			<div class="cardBox">
 				<li>
@@ -48,6 +48,9 @@
 	const router = useRouter()
   const toComponents = () =>{
 		router.push('/mzlui')
+	}
+	const goGuthub = ()=>{
+		window.open('https://github.com/Ningstyle/mzlui-doc/')
 	}
 </script>
 <style lang="scss" scoped>

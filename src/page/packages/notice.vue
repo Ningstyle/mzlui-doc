@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { VueComponent as noticeMd } from '@/page/md/notice.md'
+import { VueComponent as noticeMd } from '@/page/md/notice/notice.md'
 </script>
 
 <style lang="scss" scoped>

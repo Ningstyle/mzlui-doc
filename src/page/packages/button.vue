@@ -3,22 +3,14 @@
 		<div v-highlight>
 			<button-md></button-md>
 		</div>
-		<m-table :options="options">
-      <template #id="item">
-        <div style="margin:0">{{item.scope.row.id}}</div>
-      </template>
-      <template #action>
-        <m-button type="text" leftIcon="m-icon-edit" size="small">编辑</m-button>
-        <m-button type="text" leftIcon="m-icon-ashbin" style="color:#ec3437"  size="small">删除</m-button>
-      </template>
-    </m-table>
+		<m-table :options="options"></m-table>
 		<div style="margin-bottom:30px"></div>
 	</div>
 	<div class="cTtitle"></div>
 </template>
 <script setup>
 	import {reactive} from 'vue'
-	import { VueComponent as buttonMd } from '@/page/md/button.md'
+	import { VueComponent as buttonMd } from '@/page/md/button/button.md'
 	import mTitle from '@/components/mtitle.vue'
 	import cTitle from '@/components/ctitle.vue'
 	import block from '@/components/block.vue'

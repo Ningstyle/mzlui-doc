@@ -57,6 +57,36 @@ export default [
 			    title:"按钮"
 			  },
 			  children:[]
+			},
+      {
+			  path:'input',
+			  name:'input',
+			  component:()=> import('@/page/packages/input.vue'),
+			  meta:{
+			    requireAuth: true,
+			    title:"输入框"
+			  },
+			  children:[]
+			},
+      {
+			  path:'select',
+			  name:'select',
+			  component:()=> import('@/page/packages/select.vue'),
+			  meta:{
+			    requireAuth: true,
+			    title:"下拉框"
+			  },
+			  children:[]
+			},
+      {
+			  path:'table',
+			  name:'table',
+			  component:()=> import('@/page/packages/table.vue'),
+			  meta:{
+			    requireAuth: true,
+			    title:"表格"
+			  },
+			  children:[]
 			}
     ]
   },

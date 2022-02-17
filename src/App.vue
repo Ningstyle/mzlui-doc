@@ -11,7 +11,7 @@
 <script setup>
 import HeaderBlock from './components/header-block.vue'
 </script>
-<style>
+<style lang="scss">
 @font-face {
   font-family: "codefont"; /* Project id  */
   src: url('./assets/muiiconsfont.woff2') format('truetype');

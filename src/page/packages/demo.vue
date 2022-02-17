@@ -27,7 +27,7 @@
 
 <script setup>
 import {ref, reactive} from 'vue'
-import { VueComponent as demoMd } from '@/page/md/demo.md'
+import { VueComponent as demoMd } from '@/page/md/demo/demo.md'
 import mTitle from '@/components/mtitle.vue'
 import cTitle from '@/components/ctitle.vue'
 import block from '@/components/block.vue'
