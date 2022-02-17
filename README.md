@@ -3,7 +3,7 @@
 ###### version:0.3.0
 
 description: 一套适合开发者使用的轻量级UI组件库，完美支持vite+vue3
-tags:
+
   - "vite"
   - "vue3"
   - "ui"
