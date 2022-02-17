@@ -5,4 +5,5 @@ tags:
   - "vite"
   - "vue3"
   - "ui"
+home:http://localhost:3000/#/
 ---
