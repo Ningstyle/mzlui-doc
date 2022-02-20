@@ -12,7 +12,7 @@ const app = createApp(App)
 app.use(router)
 app.use(mzlUi)
 app.use(createPinia())
-console.log(mzlUi);
+// console.log(mzlUi);
 hljs.configure({
 	ignoreUnescapedHTML: true,
 	languages:['javascript','css','python','html','bash','java','sql','json','http','go','c++','c#','']

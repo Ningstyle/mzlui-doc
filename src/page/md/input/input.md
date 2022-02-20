@@ -5,7 +5,6 @@ version: 0.2.0
 #### 数据输入框类型，通过键盘输入字符
 ## 基本使用
 #### input的基本使用
-<br/>
 <div style="width:350px"><m-input placeholder="基本使用"></m-input></div>
 <br/>
 

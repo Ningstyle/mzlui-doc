@@ -22,9 +22,9 @@
     <three-md></three-md>
   </div>
   <m-table :options="options3">
-    <template #head-id="item">
-      <b>自定义 {{item.scope.title}}</b>
-    </template>
+		<template #head-job="item">
+			<m-dropdown :title="item.scope.title" :options="dorpoptions" @change="dropchange" size="mini"></m-dropdown>
+		</template>
     <template #id="item">
       <div style="color:#008dff">{{item.scope.row.id}}</div>
     </template>
@@ -216,6 +216,12 @@ const state = reactive({
       {attr:'width',type:'String',red:'定义表格列的宽度,支持任意浏览器支持的单位(vw,%,px)',sel:'——',def:"——"},
     ]
   },
+	dorpoptions:[
+		{label:"放羊娃",icon:'m-icon-file'},
+		{label:"徒弟",icon:'m-icon-keyboard-9'},
+		{label:"农民",icon:'m-icon-link'},
+		{label:"妖精",icon:'m-icon-file'}
+	],
   headStyle:{
     color:"#fff",
     borderColor:"#4c94d1",
@@ -225,7 +231,10 @@ const state = reactive({
     borderColor:"#4c94d1",
   }
 })
-const {options,options1,options2,options3,headStyle,rowStyle} = state
+const dropchange = (item,index) =>{
+	console.log(item,index);
+}
+const {options,options1,options2,options3,headStyle,rowStyle,dorpoptions} = state
 </script>
 
 <style lang="scss" scoped>

@@ -44,10 +44,30 @@ export default [
         component:()=> import('@/page/packages/layout.vue'),
         meta:{
           requireAuth: true,
-          title:"layout"
+          title:"布局"
         },
         children:[]
       },
+      {
+        path:'color',
+        name:'color',
+        component:()=> import('@/page/packages/color.vue'),
+        meta:{
+          requireAuth: true,
+          title:"颜色"
+        },
+        children:[]
+      },
+			{
+			  path:'icon',
+			  name:'icon',
+			  component:()=> import('@/page/packages/icon.vue'),
+			  meta:{
+			    requireAuth: true,
+			    title:"图标"
+			  },
+			  children:[]
+			},
 			{
 			  path:'button',
 			  name:'button',
@@ -75,6 +95,16 @@ export default [
 			  meta:{
 			    requireAuth: true,
 			    title:"下拉框"
+			  },
+			  children:[]
+			},
+			{
+			  path:'dropdown',
+			  name:'dropdown',
+			  component:()=> import('@/page/packages/dropdown.vue'),
+			  meta:{
+			    requireAuth: true,
+			    title:"下拉菜单"
 			  },
 			  children:[]
 			},

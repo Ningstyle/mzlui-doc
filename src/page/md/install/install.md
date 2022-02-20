@@ -20,8 +20,7 @@ import '../node_modules/mzl-ui/dist/style.css'
 
 const app = createApp(App)
 app.use(mzlUi)
-app.mount('#app')
-			
+app.mount('#app')			
 ```
 <br/>
 
@@ -29,8 +28,7 @@ app.mount('#app')
 #### 至此mzl-ui就引入完成并且可以使用了，让我们一起去Demo 示例看下！
 ```html
 <m-button>默认按钮</m-buttonn> 
-<m-button type="primary">主要按钮</m-button>
-			
+<m-button type="primary">主要按钮</m-button>		
 ```
 <br/>
 

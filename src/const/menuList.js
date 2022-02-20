@@ -13,8 +13,8 @@ export default [
 		'title-en':'Conventional',
 		'list':[
 			{'title-cn':'layout 布局','title-en':'layout','path':'/mzlui/layout'},
-			{'title-cn':'Color 颜色','title-en':'Colors','path':''},
-			{'title-cn':'Icon 图标','title-en':'Icons','path':''}
+			{'title-cn':'Color 颜色','title-en':'Colors','path':'/mzlui/color'},
+			{'title-cn':'Icon 图标','title-en':'Icons','path':'/mzlui/icon'}
 		]
 	},
 	{
@@ -24,6 +24,7 @@ export default [
 			{'title-cn':'Button 按钮','title-en':'Buttons','path':'/mzlui/button'},
 			{'title-cn':'Input 输入框','title-en':'Inputs','path':'/mzlui/input'},
 			{'title-cn':'Select 下拉框','title-en':'Select','path':'/mzlui/select'},
+			{'title-cn':'Dropdown 下拉菜单','title-en':'Dropdown','path':'/mzlui/dropdown'},
 			{'title-cn':'Radio 单选','title-en':'Radios','path':''}
 		]
 	},
