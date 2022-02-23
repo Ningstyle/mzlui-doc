@@ -108,6 +108,7 @@
   <p class="titlep">Events</p>
   <span class="titlespan">事件列表</span>
   <m-table :options="options3"></m-table>
+  <div style="margin-bottom:30px"></div>
 </template>
 
 <script setup>
@@ -171,12 +172,12 @@ const state = reactive({
       {attr:'v-model',type:'String || Array',red:'下拉框绑定值，开启多选时类型为Array',sel:'——',def:"——"},
       {attr:'size',type:'String',red:'尺寸大小',sel:'default / small / mini',def:"default"},
       {attr:'placeholder',type:'String',red:'下拉框占位字符',sel:'——',def:"——"},
-      {attr:'options',type:'Object',red:'下拉框数据配置，具体见下方 options API',sel:'——',def:"[]"},
+      {attr:'options',type:'Array',red:'下拉框数据配置，具体见下方 options API',sel:'——',def:"[]"},
       {attr:'disabled',type:'Boolean',red:'是否为禁用状态',sel:'true / false',def:"false"},
       {attr:'searchable',type:'Boolean',red:'是否开启过滤搜索',sel:'true / false',def:"false"},
       {attr:'multiple',type:'Boolean',red:'是否开启多选',sel:'true / false',def:"false"},
-      {attr:'labelFiled',type:'Boolean',red:'自定义替换lable的字段名',sel:'——',def:"label"},
-      {attr:'valueFiled',type:'Boolean',red:'自定义替换value的字段名',sel:'——',def:"value"}
+      {attr:'labelFiled',type:'String',red:'自定义替换lable的字段名',sel:'——',def:"label"},
+      {attr:'valueFiled',type:'String',red:'自定义替换value的字段名',sel:'——',def:"value"}
     ]
   },
   options2:{
@@ -188,7 +189,7 @@ const state = reactive({
       {field:'def',title:'默认值',align:'center'}
     ],
     datas:[
-      {attr:'label',type:'String',red:'下拉框默认label展示名称，自定义请使用 labelFiled 属性重新关联lable字段',sel:'——',def:"label"},
+      {attr:'label',type:'String',red:'下拉框默认label展示字段名，自定义请使用 labelFiled 属性重新关联lable字段',sel:'——',def:"label"},
       {attr:'value',type:'String',red:'下拉框默认value选中值，自定义请使用 valueFiled 属性重新关联value字段',sel:'——',def:"value"},
       {attr:'disabled',type:'Boolean',red:'是否禁用选项',sel:'true / false',def:"false"}
     ]

@@ -6,5 +6,5 @@ title: button
 
 #### 用于展示多层次结构的数据，可自定义并保持高度灵活
 ## 基本使用
-#### table表格基本使用示例,需要一个主要的 <font color=#0e80eb>**options**</font> 参数
+#### table表格基本使用示例,需要一个主要的 <font color=#0e80eb>**options**</font> 参数。
 <br/>

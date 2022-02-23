@@ -5,6 +5,8 @@ title: button
 # Button 按钮 <a href="https://github.com/Ningstyle/mzlui-doc/blob/main/src/page/md/button/button.md" target="_back" title="您可在Github上编辑此页面"><i class="iconfont m-icon-bianji" style="font-size:25px;color:#0e80eb"></i></a>
 
 #### 网页常用button按钮，常用于响应一个事件或处理某个逻辑
+## 基本使用
+#### button按钮的基本使用
 <br/>
 <div class="items">
   <span><m-button>默认按钮</m-button></span>  

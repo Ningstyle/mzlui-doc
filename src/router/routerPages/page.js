@@ -109,6 +109,16 @@ export default [
 			  children:[]
 			},
       {
+        path:'radio',
+        name:'radio',
+        component:()=> import('@/page/packages/radio.vue'),
+        meta:{
+          requireAuth: true,
+          title:"单选"
+        },
+        children:[]
+      },
+      {
 			  path:'table',
 			  name:'table',
 			  component:()=> import('@/page/packages/table.vue'),

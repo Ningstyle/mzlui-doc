@@ -25,7 +25,7 @@ export default [
 			{'title-cn':'Input 输入框','title-en':'Inputs','path':'/mzlui/input'},
 			{'title-cn':'Select 下拉框','title-en':'Select','path':'/mzlui/select'},
 			{'title-cn':'Dropdown 下拉菜单','title-en':'Dropdown','path':'/mzlui/dropdown'},
-			{'title-cn':'Radio 单选','title-en':'Radios','path':''}
+			{'title-cn':'Radio 单选','title-en':'Radios','path':'/mzlui/radio'}
 		]
 	},
 	{
