@@ -8,33 +8,48 @@
 	</div>
 	<div class="iconListBox">
 		<ul>
-			<li v-for="(item,index) in IconListData" :key="index">
+			<li v-for="(item,index) in IconListData" :key="index" @click="copyIconNane(item.className)">
 				<i class="iconfont" :class="item.className"></i>
 				<span>{{item.className}}</span>
 			</li>
 		</ul>
 	</div>
+  <input type="text" id="inputCopy" style="opacity: 0;">
 </template>
 
 <script setup>
+  import {Message} from 'mzl-ui'
 	import {ref,reactive} from 'vue'
 	import iconList from '@/const/iconList.js'
 	import { VueComponent as iconMd } from '@/page/md/icon/icon.md'
 	const keywords = ref('')
 	const IconListData = ref(iconList)
-	// const state = reactive({
-	// 	IconListData:iconList
-	// })
 	const search = (e)=>{
 		IconListData.value = []
 		iconList.filter(item=>{
 			if(item.className.indexOf(e)!=-1){
 				IconListData.value.push(item)
 			}
-			
 		})
 	}
-	// const {IconListData} = state
+  const copyIconNane = (name) =>{
+    const input = document.getElementById('inputCopy')
+    input.value = name
+    input.select()
+    if(document.execCommand('copy')){
+      document.execCommand('copy')
+      Message({
+        type: 'success',
+        text: '复制成功'
+      })
+    }else{
+      Message({
+        type: 'error',
+        text: '复制失败'
+      })
+    }
+    
+  }
 </script>
 
 <style lang="scss" scope>

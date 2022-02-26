@@ -119,6 +119,16 @@ export default [
         children:[]
       },
       {
+        path:'checkbox',
+        name:'checkbox',
+        component:()=> import('@/page/packages/checkbox.vue'),
+        meta:{
+          requireAuth: true,
+          title:"多选"
+        },
+        children:[]
+      },
+      {
 			  path:'table',
 			  name:'table',
 			  component:()=> import('@/page/packages/table.vue'),
@@ -127,7 +137,47 @@ export default [
 			    title:"表格"
 			  },
 			  children:[]
-			}
+			},
+      {
+        path:'message',
+        name:'message',
+        component:()=> import('@/page/packages/message.vue'),
+        meta:{
+          requireAuth: true,
+          title:"消息提示"
+        },
+        children:[]
+      },
+      {
+        path:'confirm',
+        name:'confirm',
+        component:()=> import('@/page/packages/confirm.vue'),
+        meta:{
+          requireAuth: true,
+          title:"消息确认"
+        },
+        children:[]
+      },
+      {
+        path:'modal',
+        name:'modal',
+        component:()=> import('@/page/packages/modal.vue'),
+        meta:{
+          requireAuth: true,
+          title:"弹窗"
+        },
+        children:[]
+      },
+      {
+        path:'drawer',
+        name:'drawer',
+        component:()=> import('@/page/packages/drawer.vue'),
+        meta:{
+          requireAuth: true,
+          title:"抽屉"
+        },
+        children:[]
+      }
     ]
   },
 ]

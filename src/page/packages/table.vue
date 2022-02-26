@@ -172,7 +172,7 @@ const state = reactive({
       }
     ],
     datas:[
-      {attr:'options',type:'Array',red:'表格数据,fileds 和 datas,fileds作为整体约束（具体见下方API），datas作为数据定义',sel:'——',def:"{fileds:[], datas:[]}"},
+      {attr:'options',type:'Object',red:'表格数据,fileds 和 datas,fileds作为整体约束（具体见下方API），datas作为数据定义',sel:'——',def:"{fileds:[], datas:[]}"},
       {attr:'size',type:'String',red:'表格尺寸大小',sel:'default / small / mini',def:"default"},
       {attr:'showHeader',type:'Boolean',red:'是否显示表头',sel:'true / false',def:"true"},
       {attr:'headStyle',type:'Object',red:'自定义表头样式',sel:'——',def:"——"},

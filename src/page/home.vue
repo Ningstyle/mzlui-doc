@@ -66,9 +66,11 @@
     border-right:1px solid #f0f0f0;
     float:left;
     .list-box{
-      width:'100%';
+      width:100%;
       height:auto;
       overflow:hidden;
+      padding-bottom:30px;
+      box-sizing: border-box;
       .item-list{
         width:100%;
         height:auto;
@@ -120,17 +122,17 @@
   }
 }
 .mzluileftMenu::-webkit-scrollbar {
-	width: 1px;
-	height: 1px;
+	width: 2px;
+	height: 2px;
 }
 	
 .mzluileftMenu::-webkit-scrollbar-thumb {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: #a6a6a7;
 }
 	
 .mzluileftMenu::-webkit-scrollbar-track {
-	border-radius: 8px;
+	border-radius: 0px;
 	background: #fff;
 }
 

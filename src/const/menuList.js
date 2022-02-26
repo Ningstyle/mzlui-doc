@@ -25,7 +25,8 @@ export default [
 			{'title-cn':'Input 输入框','title-en':'Inputs','path':'/mzlui/input'},
 			{'title-cn':'Select 下拉框','title-en':'Select','path':'/mzlui/select'},
 			{'title-cn':'Dropdown 下拉菜单','title-en':'Dropdown','path':'/mzlui/dropdown'},
-			{'title-cn':'Radio 单选','title-en':'Radios','path':'/mzlui/radio'}
+			{'title-cn':'Radio 单选','title-en':'Radios','path':'/mzlui/radio'},
+      {'title-cn':'Checkbox 多选','title-en':'Radios','path':'/mzlui/checkbox'}
 		]
 	},
 	{
@@ -35,5 +36,15 @@ export default [
 			{'title-cn':'Table 表格','title-en':'Table','path':'/mzlui/table'},
 			{'title-cn':'Pagination 分页','title-en':'Pagination','path':''}
 		]
-	}
+	},
+  {
+  	'title-cn':'交互',
+  	'title-en':'interactive',
+  	'list':[
+  		{'title-cn':'Message 消息提示','title-en':'Message','path':'/mzlui/message'},
+      {'title-cn':'Confirm 消息确认','title-en':'confirm','path':'/mzlui/confirm'},
+      {'title-cn':'Modal 弹窗','title-en':'modal','path':'/mzlui/modal'},
+      {'title-cn':'Drawer 抽屉','title-en':'drawer','path':'/mzlui/drawer'},
+  	]
+  }
 ]
