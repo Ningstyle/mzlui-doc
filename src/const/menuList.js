@@ -26,7 +26,8 @@ export default [
 			{'title-cn':'Select 下拉框','title-en':'Select','path':'/mzlui/select'},
 			{'title-cn':'Dropdown 下拉菜单','title-en':'Dropdown','path':'/mzlui/dropdown'},
 			{'title-cn':'Radio 单选','title-en':'Radios','path':'/mzlui/radio'},
-      {'title-cn':'Checkbox 多选','title-en':'Radios','path':'/mzlui/checkbox'}
+      {'title-cn':'Checkbox 多选','title-en':'Radios','path':'/mzlui/checkbox'},
+      {'title-cn':'Switch 开关','title-en':'Switch','path':'/mzlui/switch'}
 		]
 	},
 	{
@@ -45,6 +46,7 @@ export default [
       {'title-cn':'Confirm 消息确认','title-en':'confirm','path':'/mzlui/confirm'},
       {'title-cn':'Modal 弹窗','title-en':'modal','path':'/mzlui/modal'},
       {'title-cn':'Drawer 抽屉','title-en':'drawer','path':'/mzlui/drawer'},
+      {'title-cn':'Loading 加载中','title-en':'Loading','path':'/mzlui/loading'},
   	]
   }
 ]

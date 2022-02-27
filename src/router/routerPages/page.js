@@ -129,6 +129,16 @@ export default [
         children:[]
       },
       {
+        path:'switch',
+        name:'switch',
+        component:()=> import('@/page/packages/switch.vue'),
+        meta:{
+          requireAuth: true,
+          title:"开关"
+        },
+        children:[]
+      },
+      {
 			  path:'table',
 			  name:'table',
 			  component:()=> import('@/page/packages/table.vue'),
@@ -175,6 +185,16 @@ export default [
         meta:{
           requireAuth: true,
           title:"抽屉"
+        },
+        children:[]
+      },
+      {
+        path:'loading',
+        name:'loading',
+        component:()=> import('@/page/packages/loading.vue'),
+        meta:{
+          requireAuth: true,
+          title:"加载中"
         },
         children:[]
       }

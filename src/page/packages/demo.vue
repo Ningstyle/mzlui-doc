@@ -12,9 +12,6 @@
     <span style="color:#666;font-size:14px;margin:4px 0 10px 0;display:inline-block">输入的值是：{{value1}}</span>
   </div>
   <m-table :options="options" size="small">
-    <template #id="item">
-      <div style="margin:0">{{item.scope.row.id}}</div>
-    </template>
     <template #action>
       <m-button type="text" leftIcon="m-icon-edit" size="small">编辑</m-button>
       <m-button type="text" leftIcon="m-icon-ashbin" style="color:#ec3437"  size="small">删除</m-button>
