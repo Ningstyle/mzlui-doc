@@ -27,7 +27,8 @@ export default [
 			{'title-cn':'Dropdown 下拉菜单','title-en':'Dropdown','path':'/mzlui/dropdown'},
 			{'title-cn':'Radio 单选','title-en':'Radios','path':'/mzlui/radio'},
       {'title-cn':'Checkbox 多选','title-en':'Radios','path':'/mzlui/checkbox'},
-      {'title-cn':'Switch 开关','title-en':'Switch','path':'/mzlui/switch'}
+      {'title-cn':'Switch 开关','title-en':'Switch','path':'/mzlui/switch'},
+      {'title-cn':'OptFile 文件选择','title-en':'OptFile','path':'/mzlui/optfile'}
 		]
 	},
 	{

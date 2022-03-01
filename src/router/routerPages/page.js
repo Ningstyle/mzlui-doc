@@ -139,6 +139,16 @@ export default [
         children:[]
       },
       {
+        path:'optfile',
+        name:'optfile',
+        component:()=> import('@/page/packages/optfile.vue'),
+        meta:{
+          requireAuth: true,
+          title:"文件选择"
+        },
+        children:[]
+      },
+      {
 			  path:'table',
 			  name:'table',
 			  component:()=> import('@/page/packages/table.vue'),

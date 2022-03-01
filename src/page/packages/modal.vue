@@ -100,6 +100,7 @@
         {attr:'showClose',type:'Boolean',red:'是否显示关闭按钮',sel:'true / false',def:"true"},
         {attr:'scrollLock',type:'Boolean',red:'弹窗显示时是否锁定滚动条',sel:'true / false',def:"false"},
         {attr:'closeOnModal',type:'Boolean',red:'是否可通过遮罩层关闭弹窗',sel:'true / false',def:"true"},
+        {attr:'customClass',type:'String',red:'自定义整体的Class类名',sel:'——',def:"——"},
         {attr:'#header',type:'String',red:'弹窗顶部区域具名插槽名',sel:'——',def:"——"},
         {attr:'#content',type:'String',red:'弹窗内容区域具名插槽名',sel:'——',def:"——"},
         {attr:'#footer',type:'String',red:'弹窗底部区域具名插槽名',sel:'——',def:"——"}

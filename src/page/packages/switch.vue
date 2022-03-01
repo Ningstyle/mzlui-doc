@@ -64,7 +64,8 @@
         {attr:'closeText',type:'String',red:'关闭状态时辅助文字',sel:'——',def:"——"},
         {attr:'activeText',type:'String',red:'开启状态时辅助文字',sel:'——',def:"——"},
         {attr:'textAlign',type:'String',red:'辅助文字位置',sel:'left / right',def:"left"},
-        {attr:'showTipsText',type:'Boolean',red:'是否显示提示信息',sel:'true / false',def:"false"}
+        {attr:'showTipsText',type:'Boolean',red:'是否显示提示信息',sel:'true / false',def:"false"},
+        {attr:'customClass',type:'String',red:'自定义整体的Class类名',sel:'——',def:"——"}
       ]
     },
     options2:{
