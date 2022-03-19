@@ -1,11 +1,11 @@
 export default [
   {
     path:'/',
-    name:'主页',
+    name:'mzl-ui',
     component:()=> import('@/page/index.vue'),
     meta:{
 			requireAuth: true,
-			title:"主页"
+			title:"mzl-ui"
 		},
     children:[]
   }

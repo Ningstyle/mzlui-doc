@@ -3,7 +3,6 @@
 ```html
 <!-- html -->
 <m-optfile
-  id="file5"
   label="选择文件"
   imgListShow
   targetType="box"

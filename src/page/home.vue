@@ -11,6 +11,7 @@
     <div class="mzluirightView">
 			<router-view></router-view>
 		</div>
+    <m-backtop target=".mzluirightView"></m-backtop>
   </div>
 </template>
 <script setup>

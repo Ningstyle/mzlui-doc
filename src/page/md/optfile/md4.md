@@ -2,8 +2,7 @@
 
 ```html
 <!-- html -->
-<m-optfile 
-  id="file4"
+<m-optfile
   label="将文件拖拽到此处或点击选择文件"
   showFileList
   targetType="box"

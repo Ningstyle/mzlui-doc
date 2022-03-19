@@ -88,7 +88,7 @@
   </div>
   <div style="width: 400px;">
   	<m-select
-  	  v-model="selVal1" 
+  	  v-model="selVal4" 
   	  placeholder="请选择" 
   	  :options="selOptions"
       @change="selchange2"
@@ -125,6 +125,7 @@ const selVal = ref('bajisitan')
 const selVal1 = ref('')
 const selVal2 = ref('132')
 const selVal3 = ref('')
+const selVal4 = ref([])
 const state = reactive({
   selOptions:[
     {label:'中国',value:'zhongguo'},
@@ -202,7 +203,7 @@ const state = reactive({
       {field:'exm',title:'示例',align:'center',width:'350px'}
     ],
     datas:[
-      {name:"change",red:'下拉框选中事件',attr:'(value: item,index)',exm:'change = (item,index) =>{console.log(item,index)}'},
+      {name:"change",red:'下拉框选中事件',attr:'(value: item)',exm:'change = (item) =>{console.log(item)}'},
     ]
   }
 })

@@ -89,6 +89,16 @@ export default [
 			  children:[]
 			},
       {
+        path:'textarea',
+        name:'textarea',
+        component:()=> import('@/page/packages/textarea.vue'),
+        meta:{
+          requireAuth: true,
+          title:"文本域"
+        },
+        children:[]
+      },
+      {
 			  path:'select',
 			  name:'select',
 			  component:()=> import('@/page/packages/select.vue'),
@@ -159,6 +169,36 @@ export default [
 			  children:[]
 			},
       {
+        path:'pagination',
+        name:'pagination',
+        component:()=> import('@/page/packages/pagination.vue'),
+        meta:{
+          requireAuth: true,
+          title:"分页"
+        },
+        children:[]
+      },
+      {
+        path:'datepicker',
+        name:'datepicker',
+        component:()=> import('@/page/packages/datepicker.vue'),
+        meta:{
+          requireAuth: true,
+          title:"日期选择"
+        },
+        children:[]
+      },
+      {
+        path:'tree',
+        name:'tree',
+        component:()=> import('@/page/packages/tree.vue'),
+        meta:{
+          requireAuth: true,
+          title:"树形控件"
+        },
+        children:[]
+      },
+      {
         path:'message',
         name:'message',
         component:()=> import('@/page/packages/message.vue'),
@@ -205,6 +245,26 @@ export default [
         meta:{
           requireAuth: true,
           title:"加载中"
+        },
+        children:[]
+      },
+      {
+        path:'backtop',
+        name:'backtop',
+        component:()=> import('@/page/packages/backtop.vue'),
+        meta:{
+          requireAuth: true,
+          title:"回到顶部"
+        },
+        children:[]
+      },
+      {
+        path:'formatDate',
+        name:'formatDate',
+        component:()=> import('@/page/packages/formatDate.vue'),
+        meta:{
+          requireAuth: true,
+          title:"时间戳转换日期格式"
         },
         children:[]
       }

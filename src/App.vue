@@ -9,7 +9,15 @@
 	</div>
 </template>
 <script setup>
+import {onMounted} from 'vue'
 import HeaderBlock from './components/header-block.vue'
+onMounted(()=>{
+  const script = document.createElement("script");
+  script.src =
+    "https://s4.cnzz.com/z_stat.php?id=1280948690&web_id=1280948690";   //该路径为点击统计代码后，页面中第一个 文字统计 script代码
+  script.language = "JavaScript";
+  document.body.appendChild(script);
+})
 </script>
 <style lang="scss">
 @font-face {

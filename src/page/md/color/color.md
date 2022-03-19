@@ -108,3 +108,14 @@ title: button
     <span class="color">#f0f0f0</span>
   </li>
 </div>
+<br/>
+<br/>
+
+## 阴影颜色
+<div class="color-itembox">
+  <li style="box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);;color:#333">
+    <span class="title">阴影颜色</span>
+    <span class="color">0 2px 12px 0 rgba(0, 0, 0, 0.1)</span>
+  </li>
+</div>
+<div style="margin-bottom:50px"></div> 

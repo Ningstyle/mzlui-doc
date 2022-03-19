@@ -2,7 +2,7 @@
 
 ```html
 <!-- html -->
-<m-optfile id="file2" label="选择文件" type="primary" showFileList></m-optfile>
+<m-optfile label="选择文件" type="primary" showFileList></m-optfile>
 ```
 <br/>
 

@@ -8,12 +8,12 @@ title: button
 ## 基本使用
 #### OptFile组件基本使用示例。
 <br/>
-<m-optfile id="file1" label="选择文件"></m-optfile>
+<m-optfile label="选择文件"></m-optfile>
 <br/>
 
 ```html
 <!-- html -->
-<m-optfile id="file1" label="选择文件"></m-optfile>
+<m-optfile label="选择文件"></m-optfile>
 ```
 <br/>
 

@@ -2,7 +2,7 @@
 
 ```html
 <!-- html -->
-<m-optfile id="file3" showFileList targetType="box" accept=".png,.jpg" multiple></m-optfile>
+<m-optfile showFileList targetType="box" accept=".png,.jpg" multiple></m-optfile>
 ```
 <br/>
 

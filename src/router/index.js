@@ -5,7 +5,10 @@ const router = createRouter({
   history:createWebHashHistory(),
   scrollBehavior:((to, from, savedPosition)=>{
     document.title = to.meta.title
-    document.querySelector('.mzluirightView').scrollTop = 0
+    if(to.fullPath!='/'){
+      document.querySelector('.mzluirightView').scrollTop = 0
+    }
+    
   }),
   routes:[...BaseRouter,...PageRouter]
 })

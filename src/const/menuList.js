@@ -23,6 +23,7 @@ export default [
 		'list':[
 			{'title-cn':'Button 按钮','title-en':'Buttons','path':'/mzlui/button'},
 			{'title-cn':'Input 输入框','title-en':'Inputs','path':'/mzlui/input'},
+      {'title-cn':'Textarea 文本域','title-en':'Textarea','path':'/mzlui/textarea'},
 			{'title-cn':'Select 下拉框','title-en':'Select','path':'/mzlui/select'},
 			{'title-cn':'Dropdown 下拉菜单','title-en':'Dropdown','path':'/mzlui/dropdown'},
 			{'title-cn':'Radio 单选','title-en':'Radios','path':'/mzlui/radio'},
@@ -36,7 +37,9 @@ export default [
 		'title-en':'Data',
 		'list':[
 			{'title-cn':'Table 表格','title-en':'Table','path':'/mzlui/table'},
-			{'title-cn':'Pagination 分页','title-en':'Pagination','path':''}
+			{'title-cn':'Pagination 分页','title-en':'Pagination','path':'/mzlui/pagination'},
+      {'title-cn':'Date 日期选择','title-en':'Datepicker','path':'/mzlui/datepicker'},
+      {'title-cn':'Tree 树形控件','title-en':'Tree','path':'/mzlui/tree'}
 		]
 	},
   {
@@ -48,6 +51,14 @@ export default [
       {'title-cn':'Modal 弹窗','title-en':'modal','path':'/mzlui/modal'},
       {'title-cn':'Drawer 抽屉','title-en':'drawer','path':'/mzlui/drawer'},
       {'title-cn':'Loading 加载中','title-en':'Loading','path':'/mzlui/loading'},
+      {'title-cn':'Backtop 回到顶部','title-en':'Loading','path':'/mzlui/backtop'},
+  	]
+  },
+  {
+  	'title-cn':'方法',
+  	'title-en':'function',
+  	'list':[
+  		{'title-cn':'时间戳转换日期格式','title-en':'formatDate','path':'/mzlui/formatDate'},
   	]
   }
 ]

@@ -1,7 +1,7 @@
 <template>
   <div class="header-block-box">
 		<div class="logoBox">
-			<img src="../assets/logo.png" alt="" @click="toHome">
+			<img src="../assets/logo.png" alt="mzl-ui" @click="toHome">
 			<a href="javascript:;" @click="toHome">Mzl UI</a>
 		</div>
 		
