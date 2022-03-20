@@ -8,13 +8,43 @@ export default [
 			title:"组件首页"
 		},
     children:[
+      // {
+      //   path:'',
+      //   name:'notice',
+      //   component:()=> import('@/page/packages/notice.vue'),
+      //   meta:{
+      //     requireAuth: true,
+      //     title:"须知"
+      //   },
+      //   children:[]
+      // },
       {
         path:'',
-        name:'notice',
-        component:()=> import('@/page/packages/notice.vue'),
+        name:'contribution',
+        component:()=> import('@/page/packages/contribution.vue'),
         meta:{
           requireAuth: true,
-          title:"须知"
+          title:"参与贡献"
+        },
+        children:[]
+      },
+      {
+        path:'support',
+        name:'support',
+        component:()=> import('@/page/packages/support.vue'),
+        meta:{
+          requireAuth: true,
+          title:"支持mzl-ui"
+        },
+        children:[]
+      },
+      {
+        path:'updatelog',
+        name:'updatelog',
+        component:()=> import('@/page/packages/updatelog.vue'),
+        meta:{
+          requireAuth: true,
+          title:"更新日志"
         },
         children:[]
       },
@@ -34,7 +64,7 @@ export default [
         component:()=> import('@/page/packages/demo.vue'),
         meta:{
           requireAuth: true,
-          title:"demo"
+          title:"示例"
         },
         children:[]
       },

@@ -3,9 +3,12 @@ export default [
 		'title-cn':'快速上手',
 		'title-en':'Quick start',
 		'list':[
-			{'title-cn':'使用须知','title-en':'Usage notice','path':'/mzlui'},
+			// {'title-cn':'使用须知','title-en':'Usage notice','path':'/mzlui'},
+      {'title-cn':'参与贡献','title-en':'Participation and contribution','path':'/mzlui'},
+      {'title-cn':'支持Mzl-UI','title-en':'Participation and contribution','path':'/mzlui/support'},
+      {'title-cn':'更新日志','title-en':'Participation and contribution','path':'/mzlui/updatelog'},
 			{'title-cn':'安装使用','title-en':'Install and use','path':'/mzlui/install'},
-			{'title-cn':'Demo 示例','title-en':'Demo Example','path':'/mzlui/demo'}
+			{'title-cn':'Demo 示例','title-en':'Demo Example','path':'/mzlui/demo'},
 		]
 	},
 	{
