@@ -57,14 +57,19 @@
         </li>
       </div>
       <div class="links">
-        <p class="titles">参与贡献</p>
-        <li v-for="(item,index) in devoteList" :key="index" title="点击跳转至Ta的Github主页" @click="toDevoteGithub(item)">{{item.name}}</li>
         <p class="titles">链接</p>
         <span @click="goGuthub">Github</span>
-				<span @click="goToNpm">NPM</span>
-				<span>关于MZL_UI</span>
-				<span @click="verSion">更新日志</span>
-				<span>关于作者</span>
+        <span @click="goToNpm">NPM</span>
+        <!-- <span>关于MZL_UI</span> -->
+        <span @click="verSion">更新日志</span>
+        <!-- <span>关于作者</span> -->
+        <p class="titles">贡献人员</p>
+        <li v-for="(item,index) in devoteList" :key="index" title="点击跳转至Ta的Github主页" @click="toDevoteGithub(item)">
+          <div class="">
+            <img :src="item.img" alt="">
+            <span :style="{'color':item.name=='Ningstyle'?'#000':''}">{{item.name}}</span>
+          </div>
+        </li>
       </div>
     </div>
   </div>
@@ -76,7 +81,9 @@ import { reactive } from 'vue';
 const router = useRouter();
 const state = reactive({
 	devoteList:[
-		{name:"style'me",github:"https://github.com/Ningstyle"}
+		{name:"Ningstyle",github:"https://github.com/Ningstyle",img:"https://avatars.githubusercontent.com/u/23306049?s=60&v=4"},
+    {name:"pakchoily",github:"https://github.com/pakchoily",img:"https://avatars.githubusercontent.com/u/59410698?s=60&v=4"},
+    {name:"Potato-X",github:"https://github.com/Potato-X",img:"https://avatars.githubusercontent.com/u/68857645?s=60&v=4"},
 	]
 })
 const toComponents = () => {
@@ -89,12 +96,14 @@ const goToNpm = () => {
 	window.open("https://www.npmjs.com/package/mzl-ui");
 }
 const verSion = () => {
-	window.open("https://github.com/Ningstyle/mzl-ui/blob/main/version.md");
+  router.push("/mzlui/updatelog")
 }
 const toDevoteGithub = (item) => {
 	window.open(item.github);
 }
 const { devoteList }  = state
+sessionStorage.setItem('mIndex','0-0')
+sessionStorage.setItem('tabIndex',0)
 </script>
 <style lang="scss" scoped>
 .contentBox {
@@ -193,6 +202,26 @@ const { devoteList }  = state
 				color: #0e80eb;
 				cursor: pointer;
 				margin:0 .5vw;
+        div{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom:4px;
+          img{
+            width:1.2vw;
+            border-radius: 50%;
+            margin-right: 7px;
+          }
+          span{
+            margin:0;
+          }
+          &:hover{
+            span{
+              text-decoration: underline;
+            }
+          }
+        }
+        
 			}
       p {
         font-size: 20px;
