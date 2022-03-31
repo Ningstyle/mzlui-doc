@@ -27,33 +27,23 @@
       <div class="cardBox">
         <li>
           <p>更小的体积</p>
-          <div>
-            组件体积更小，灵活使用，按需使用。
-          </div>
+          <div>组件体积更小，灵活使用，按需使用。</div>
         </li>
         <li>
           <p>更快的响应</p>
-          <div>
-            配合vue3的composition API，更快的相应。
-          </div>
+          <div>配合vue3的composition API，更快的相应。</div>
         </li>
         <li>
           <p>更强的拓展性</p>
-          <div>
-            给开发者几乎所有的机会来自定义组件，满足一切项目使用场景。
-          </div>
+          <div>给开发者几乎所有的机会来自定义组件，满足一切项目使用场景。</div>
         </li>
         <li>
           <p>更完美的支持</p>
-          <div>
-            专为vue3版本开发。
-          </div>
+          <div>专为vue3版本开发。</div>
         </li>
         <li>
           <p>更友好的渲染</p>
-          <div>
-            极少的代码量，极简配置项。
-          </div>
+          <div>极少的代码量，极简配置项。</div>
         </li>
       </div>
       <div class="links">
@@ -64,10 +54,17 @@
         <span @click="verSion">更新日志</span>
         <!-- <span>关于作者</span> -->
         <p class="titles">贡献人员</p>
-        <li v-for="(item,index) in devoteList" :key="index" title="点击跳转至Ta的Github主页" @click="toDevoteGithub(item)">
+        <li
+          v-for="(item, index) in devoteList"
+          :key="index"
+          title="点击跳转至Ta的Github主页"
+          @click="toDevoteGithub(item)"
+        >
           <div class="">
-            <img :src="item.img" alt="">
-            <span :style="{'color':item.name=='Ningstyle'?'#000':''}">{{item.name}}</span>
+            <img :src="item.img" alt="" />
+            <span :style="{ color: item.name == 'Ningstyle' ? '#000' : '' }">{{
+              item.name
+            }}</span>
           </div>
         </li>
       </div>
@@ -76,16 +73,33 @@
 </template>
 
 <script setup>
-import { useRouter} from "vue-router";
-import { reactive } from 'vue';
+import { useRouter } from "vue-router";
+import { reactive } from "vue";
 const router = useRouter();
 const state = reactive({
-	devoteList:[
-		{name:"Ningstyle",github:"https://github.com/Ningstyle",img:"https://avatars.githubusercontent.com/u/23306049?s=60&v=4"},
-    {name:"pakchoily",github:"https://github.com/pakchoily",img:"https://avatars.githubusercontent.com/u/59410698?s=60&v=4"},
-    {name:"Potato-X",github:"https://github.com/Potato-X",img:"https://avatars.githubusercontent.com/u/68857645?s=60&v=4"},
-	]
-})
+  devoteList: [
+    {
+      name: "Ningstyle",
+      github: "https://github.com/Ningstyle",
+      img: "https://avatars.githubusercontent.com/u/23306049?s=60&v=4",
+    },
+    {
+      name: "pakchoily",
+      github: "https://github.com/pakchoily",
+      img: "https://avatars.githubusercontent.com/u/59410698?s=60&v=4",
+    },
+    {
+      name: "Potato-X",
+      github: "https://github.com/Potato-X",
+      img: "https://avatars.githubusercontent.com/u/68857645?s=60&v=4",
+    },
+    {
+      name: "wally94",
+      github: "https://github.com/wally94",
+      img: "https://avatars.githubusercontent.com/u/40847305?v=4",
+    },
+  ],
+});
 const toComponents = () => {
   router.push("/mzlui");
 };
@@ -93,17 +107,17 @@ const goGuthub = () => {
   window.open("https://github.com/Ningstyle/mzl-ui");
 };
 const goToNpm = () => {
-	window.open("https://www.npmjs.com/package/mzl-ui");
-}
+  window.open("https://www.npmjs.com/package/mzl-ui");
+};
 const verSion = () => {
-  router.push("/mzlui/updatelog")
-}
+  router.push("/mzlui/updatelog");
+};
 const toDevoteGithub = (item) => {
-	window.open(item.github);
-}
-const { devoteList }  = state
-sessionStorage.setItem('mIndex','0-0')
-sessionStorage.setItem('tabIndex',0)
+  window.open(item.github);
+};
+const { devoteList } = state;
+sessionStorage.setItem("mIndex", "0-0");
+sessionStorage.setItem("tabIndex", 0);
 </script>
 <style lang="scss" scoped>
 .contentBox {
@@ -193,36 +207,35 @@ sessionStorage.setItem('tabIndex',0)
       overflow: hidden;
       text-align: center;
       margin-bottom: 30px;
-			margin-top:1vh;
-			li{
-				list-style: none;
-				display: inline-block;
-				font-size:.8vw;
-				font-weight: 550;
-				color: #0e80eb;
-				cursor: pointer;
-				margin:0 .5vw;
-        div{
+      margin-top: 1vh;
+      li {
+        list-style: none;
+        display: inline-block;
+        font-size: 0.8vw;
+        font-weight: 550;
+        color: #0e80eb;
+        cursor: pointer;
+        margin: 0 0.5vw;
+        div {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-bottom:4px;
-          img{
-            width:1.2vw;
+          margin-bottom: 4px;
+          img {
+            width: 1.2vw;
             border-radius: 50%;
             margin-right: 7px;
           }
-          span{
-            margin:0;
+          span {
+            margin: 0;
           }
-          &:hover{
-            span{
+          &:hover {
+            span {
               text-decoration: underline;
             }
           }
         }
-        
-			}
+      }
       p {
         font-size: 20px;
         font-weight: 600;
